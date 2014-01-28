@@ -8,25 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		50B8A2941897E50B000F03DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B8A2931897E50B000F03DF /* Foundation.framework */; };
-		50B8A2991897E50B000F03DF /* GameKitPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50B8A2981897E50B000F03DF /* GameKitPlus.h */; };
-		50B8A29B1897E50B000F03DF /* GameKitPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8A29A1897E50B000F03DF /* GameKitPlus.m */; };
-		50B8A2A21897E50B000F03DF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B8A2A11897E50B000F03DF /* XCTest.framework */; };
-		50B8A2A31897E50B000F03DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B8A2931897E50B000F03DF /* Foundation.framework */; };
-		50B8A2A51897E50B000F03DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B8A2A41897E50B000F03DF /* UIKit.framework */; };
-		50B8A2A81897E50B000F03DF /* libGameKitPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B8A2901897E50B000F03DF /* libGameKitPlus.a */; };
-		50B8A2AE1897E50B000F03DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50B8A2AC1897E50B000F03DF /* InfoPlist.strings */; };
-		50B8A2B01897E50B000F03DF /* GameKitPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8A2AF1897E50B000F03DF /* GameKitPlusTests.m */; };
+		50B8A2C51897E916000F03DF /* GKLeaderboard+GKPLoadScoresAndPlayers.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8A2BC1897E916000F03DF /* GKLeaderboard+GKPLoadScoresAndPlayers.m */; };
+		50B8A2C61897E916000F03DF /* GKLeaderboard+GKPLocalPlayerRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8A2BE1897E916000F03DF /* GKLeaderboard+GKPLocalPlayerRange.m */; };
+		50B8A2C71897E916000F03DF /* GKPlayer+GKPLoadPhotoForPlayerID.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8A2C01897E916000F03DF /* GKPlayer+GKPLoadPhotoForPlayerID.m */; };
+		50B8A2C81897E916000F03DF /* GKScore+GKPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8A2C21897E916000F03DF /* GKScore+GKPPlayer.m */; };
+		50B8A2C91897E916000F03DF /* GKScore+GKPReportScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B8A2C41897E916000F03DF /* GKScore+GKPReportScore.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		50B8A2A61897E50B000F03DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50B8A2881897E50B000F03DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50B8A28F1897E50B000F03DF;
-			remoteInfo = GameKitPlus;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		50B8A28E1897E50B000F03DF /* CopyFiles */ = {
@@ -35,7 +22,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				50B8A2991897E50B000F03DF /* GameKitPlus.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,15 +30,23 @@
 /* Begin PBXFileReference section */
 		50B8A2901897E50B000F03DF /* libGameKitPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGameKitPlus.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B8A2931897E50B000F03DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		50B8A2971897E50B000F03DF /* GameKitPlus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameKitPlus-Prefix.pch"; sourceTree = "<group>"; };
-		50B8A2981897E50B000F03DF /* GameKitPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameKitPlus.h; sourceTree = "<group>"; };
-		50B8A29A1897E50B000F03DF /* GameKitPlus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameKitPlus.m; sourceTree = "<group>"; };
-		50B8A2A01897E50B000F03DF /* GameKitPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameKitPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B8A2A11897E50B000F03DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		50B8A2A41897E50B000F03DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		50B8A2AB1897E50B000F03DF /* GameKitPlusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameKitPlusTests-Info.plist"; sourceTree = "<group>"; };
 		50B8A2AD1897E50B000F03DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50B8A2AF1897E50B000F03DF /* GameKitPlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameKitPlusTests.m; sourceTree = "<group>"; };
+		50B8A2B91897E8E5000F03DF /* GameKitPlus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameKitPlus-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50B8A2BA1897E8E5000F03DF /* GameKitPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameKitPlus.h; sourceTree = SOURCE_ROOT; };
+		50B8A2BB1897E916000F03DF /* GKLeaderboard+GKPLoadScoresAndPlayers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GKLeaderboard+GKPLoadScoresAndPlayers.h"; sourceTree = SOURCE_ROOT; };
+		50B8A2BC1897E916000F03DF /* GKLeaderboard+GKPLoadScoresAndPlayers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GKLeaderboard+GKPLoadScoresAndPlayers.m"; sourceTree = SOURCE_ROOT; };
+		50B8A2BD1897E916000F03DF /* GKLeaderboard+GKPLocalPlayerRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GKLeaderboard+GKPLocalPlayerRange.h"; sourceTree = SOURCE_ROOT; };
+		50B8A2BE1897E916000F03DF /* GKLeaderboard+GKPLocalPlayerRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GKLeaderboard+GKPLocalPlayerRange.m"; sourceTree = SOURCE_ROOT; };
+		50B8A2BF1897E916000F03DF /* GKPlayer+GKPLoadPhotoForPlayerID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GKPlayer+GKPLoadPhotoForPlayerID.h"; sourceTree = SOURCE_ROOT; };
+		50B8A2C01897E916000F03DF /* GKPlayer+GKPLoadPhotoForPlayerID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GKPlayer+GKPLoadPhotoForPlayerID.m"; sourceTree = SOURCE_ROOT; };
+		50B8A2C11897E916000F03DF /* GKScore+GKPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GKScore+GKPPlayer.h"; sourceTree = SOURCE_ROOT; };
+		50B8A2C21897E916000F03DF /* GKScore+GKPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GKScore+GKPPlayer.m"; sourceTree = SOURCE_ROOT; };
+		50B8A2C31897E916000F03DF /* GKScore+GKPReportScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GKScore+GKPReportScore.h"; sourceTree = SOURCE_ROOT; };
+		50B8A2C41897E916000F03DF /* GKScore+GKPReportScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GKScore+GKPReportScore.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +55,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50B8A2941897E50B000F03DF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50B8A29D1897E50B000F03DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50B8A2A81897E50B000F03DF /* libGameKitPlus.a in Frameworks */,
-				50B8A2A21897E50B000F03DF /* XCTest.framework in Frameworks */,
-				50B8A2A51897E50B000F03DF /* UIKit.framework in Frameworks */,
-				50B8A2A31897E50B000F03DF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				50B8A2901897E50B000F03DF /* libGameKitPlus.a */,
-				50B8A2A01897E50B000F03DF /* GameKitPlusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,19 +92,20 @@
 		50B8A2951897E50B000F03DF /* GameKitPlus */ = {
 			isa = PBXGroup;
 			children = (
-				50B8A2981897E50B000F03DF /* GameKitPlus.h */,
-				50B8A29A1897E50B000F03DF /* GameKitPlus.m */,
-				50B8A2961897E50B000F03DF /* Supporting Files */,
+				50B8A2B91897E8E5000F03DF /* GameKitPlus-Prefix.pch */,
+				50B8A2BA1897E8E5000F03DF /* GameKitPlus.h */,
+				50B8A2BB1897E916000F03DF /* GKLeaderboard+GKPLoadScoresAndPlayers.h */,
+				50B8A2BC1897E916000F03DF /* GKLeaderboard+GKPLoadScoresAndPlayers.m */,
+				50B8A2BD1897E916000F03DF /* GKLeaderboard+GKPLocalPlayerRange.h */,
+				50B8A2BE1897E916000F03DF /* GKLeaderboard+GKPLocalPlayerRange.m */,
+				50B8A2BF1897E916000F03DF /* GKPlayer+GKPLoadPhotoForPlayerID.h */,
+				50B8A2C01897E916000F03DF /* GKPlayer+GKPLoadPhotoForPlayerID.m */,
+				50B8A2C11897E916000F03DF /* GKScore+GKPPlayer.h */,
+				50B8A2C21897E916000F03DF /* GKScore+GKPPlayer.m */,
+				50B8A2C31897E916000F03DF /* GKScore+GKPReportScore.h */,
+				50B8A2C41897E916000F03DF /* GKScore+GKPReportScore.m */,
 			);
 			path = GameKitPlus;
-			sourceTree = "<group>";
-		};
-		50B8A2961897E50B000F03DF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				50B8A2971897E50B000F03DF /* GameKitPlus-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		50B8A2A91897E50B000F03DF /* GameKitPlusTests */ = {
@@ -163,24 +146,6 @@
 			productReference = 50B8A2901897E50B000F03DF /* libGameKitPlus.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		50B8A29F1897E50B000F03DF /* GameKitPlusTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 50B8A2B61897E50B000F03DF /* Build configuration list for PBXNativeTarget "GameKitPlusTests" */;
-			buildPhases = (
-				50B8A29C1897E50B000F03DF /* Sources */,
-				50B8A29D1897E50B000F03DF /* Frameworks */,
-				50B8A29E1897E50B000F03DF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				50B8A2A71897E50B000F03DF /* PBXTargetDependency */,
-			);
-			name = GameKitPlusTests;
-			productName = GameKitPlusTests;
-			productReference = 50B8A2A01897E50B000F03DF /* GameKitPlusTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,7 +155,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = McZonk;
 			};
-			buildConfigurationList = 50B8A28B1897E50B000F03DF /* Build configuration list for PBXProject "GameKitPlus" */;
+			buildConfigurationList = 50B8A28B1897E50B000F03DF /* Build configuration list for PBXProject "GameKitPlus-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -203,48 +168,24 @@
 			projectRoot = "";
 			targets = (
 				50B8A28F1897E50B000F03DF /* GameKitPlus */,
-				50B8A29F1897E50B000F03DF /* GameKitPlusTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		50B8A29E1897E50B000F03DF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50B8A2AE1897E50B000F03DF /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50B8A28C1897E50B000F03DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50B8A29B1897E50B000F03DF /* GameKitPlus.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50B8A29C1897E50B000F03DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50B8A2B01897E50B000F03DF /* GameKitPlusTests.m in Sources */,
+				50B8A2C51897E916000F03DF /* GKLeaderboard+GKPLoadScoresAndPlayers.m in Sources */,
+				50B8A2C71897E916000F03DF /* GKPlayer+GKPLoadPhotoForPlayerID.m in Sources */,
+				50B8A2C81897E916000F03DF /* GKScore+GKPPlayer.m in Sources */,
+				50B8A2C61897E916000F03DF /* GKLeaderboard+GKPLocalPlayerRange.m in Sources */,
+				50B8A2C91897E916000F03DF /* GKScore+GKPReportScore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		50B8A2A71897E50B000F03DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 50B8A28F1897E50B000F03DF /* GameKitPlus */;
-			targetProxy = 50B8A2A61897E50B000F03DF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		50B8A2AC1897E50B000F03DF /* InfoPlist.strings */ = {
@@ -333,7 +274,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/GameKitPlus.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GameKitPlus/GameKitPlus-Prefix.pch";
+				GCC_PREFIX_HEADER = "GameKitPlus-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -345,55 +286,17 @@
 			buildSettings = {
 				DSTROOT = /tmp/GameKitPlus.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GameKitPlus/GameKitPlus-Prefix.pch";
+				GCC_PREFIX_HEADER = "GameKitPlus-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		50B8A2B71897E50B000F03DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GameKitPlus/GameKitPlus-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "GameKitPlusTests/GameKitPlusTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		50B8A2B81897E50B000F03DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GameKitPlus/GameKitPlus-Prefix.pch";
-				INFOPLIST_FILE = "GameKitPlusTests/GameKitPlusTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50B8A28B1897E50B000F03DF /* Build configuration list for PBXProject "GameKitPlus" */ = {
+		50B8A28B1897E50B000F03DF /* Build configuration list for PBXProject "GameKitPlus-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50B8A2B11897E50B000F03DF /* Debug */,
@@ -409,14 +312,7 @@
 				50B8A2B51897E50B000F03DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		50B8A2B61897E50B000F03DF /* Build configuration list for PBXNativeTarget "GameKitPlusTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50B8A2B71897E50B000F03DF /* Debug */,
-				50B8A2B81897E50B000F03DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
